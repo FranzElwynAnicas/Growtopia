@@ -86,16 +86,17 @@ st.write("Join our early access list and get updates about GrowSense!")
 with st.form("signup_form"):
     name = st.text_input("Full Name")
     email = st.text_input("Email Address")
-    message = st.text_area("Message (optional)")
+    message = st.text_area("Feedback or message")
     submit = st.form_submit_button("Sign Up")
 
 if submit:
     if name and email:
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         sheet.append_row([timestamp, name, email, message])
-        st.success("✅ Thank you! Your information has been recorded.")
+        st.success("Thank you! Your registration has been recorded.")
     else:
         st.warning("Please fill in your name and email.")
 
 st.caption("© 2025 GrowSense | Making gardening an enjoyable and sustainable activity for everyone.")
 st.markdown('</div>', unsafe_allow_html=True)
+
