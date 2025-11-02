@@ -4,7 +4,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime
 
 # --- Page Setup ---
-st.set_page_config(page_title="GrowSense | Register", layout="wide")
+st.set_page_config(page_title="Growtopia | Register", layout="wide")
 
 # --- Styling ---
 page_style = """
@@ -99,4 +99,5 @@ if submit:
 
 st.caption("© 2025 GrowSense | Making gardening an enjoyable and sustainable activity for everyone.")
 st.markdown('</div>', unsafe_allow_html=True)
+
 
