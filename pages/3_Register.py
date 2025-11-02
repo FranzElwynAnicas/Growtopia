@@ -80,8 +80,8 @@ sheet = client.open("Growtopia signups").sheet1  # Make sure the sheet name matc
 # --- Main Container ---
 st.markdown('<div class="main-container">', unsafe_allow_html=True)
 
-st.title("📩 Contact / Register")
-st.write("Join our early access list and get updates about GrowSense!")
+st.title("📩 Registration")
+st.write("Join our early access list and get updates about Growtopia!")
 
 with st.form("signup_form"):
     name = st.text_input("Full Name")
@@ -97,7 +97,8 @@ if submit:
     else:
         st.warning("Please fill in your name and email.")
 
-st.caption("© 2025 GrowSense | Making gardening an enjoyable and sustainable activity for everyone.")
+st.caption("© 2025 Growtopia | Making gardening an enjoyable and sustainable activity for everyone.")
 st.markdown('</div>', unsafe_allow_html=True)
+
 
 
