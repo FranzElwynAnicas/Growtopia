@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Features | Growtopia", layout="wide")
 
-# --- Styling (matches About page) ---
+# style
 page_style = """
 <style>
 [data-testid="stAppViewContainer"] {
@@ -54,10 +54,10 @@ img {
 """
 st.markdown(page_style, unsafe_allow_html=True)
 
-# --- Main Container ---
+# container
 st.markdown('<div class="main-container">', unsafe_allow_html=True)
 
-# --- Page Content ---
+# page
 st.title("⚙️ Features & Technology")
 
 st.write("""
@@ -85,3 +85,4 @@ st.markdown('</div>', unsafe_allow_html=True)
 st.caption("© 2025 Growtopia | Making gardening an enjoyable and sustainable activity for everyone.")
 
 st.markdown('</div>', unsafe_allow_html=True)
+
