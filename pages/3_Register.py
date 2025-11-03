@@ -3,10 +3,9 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime
 
-# --- Page Setup ---
 st.set_page_config(page_title="Growtopia | Register", layout="wide")
 
-# --- Styling ---
+# style
 page_style = """
 <style>
 [data-testid="stAppViewContainer"] {
@@ -70,14 +69,14 @@ div.stTextArea>div>div>textarea::placeholder {
 """
 st.markdown(page_style, unsafe_allow_html=True)
 
-# --- Google Sheets Setup using Secrets ---
+# gsheets
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 creds_dict = st.secrets["google_service_account"]  # <-- direct dict from secrets
 creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
 client = gspread.authorize(creds)
 sheet = client.open("Growtopia signups").sheet1  # Make sure the sheet name matches exactly
 
-# --- Main Container ---
+# container
 st.markdown('<div class="main-container">', unsafe_allow_html=True)
 
 st.title("📩 Registration")
@@ -99,6 +98,7 @@ if submit:
 
 st.caption("© 2025 Growtopia | Making gardening an enjoyable and sustainable activity for everyone.")
 st.markdown('</div>', unsafe_allow_html=True)
+
 
 
 
