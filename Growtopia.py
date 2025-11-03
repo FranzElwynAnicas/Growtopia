@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Growtopia | Smart Watering System", layout="wide")
 
-# --- Styling ---
+# style
 page_style = """
 <style>
 [data-testid="stAppViewContainer"] {
@@ -54,7 +54,7 @@ img {
 """
 st.markdown(page_style, unsafe_allow_html=True)
 
-# --- Main Section ---
+# main
 st.markdown('<div class="main-container">', unsafe_allow_html=True)
 
 st.title("🌿 Smart Watering for a Greener Tomorrow")
@@ -71,7 +71,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# --- Section 1: Why Choose Growtopia ---
+# why growtopia
 st.markdown("## 💧 Why Choose Growtopia?")
 
 col1, col2, col3 = st.columns(3)
@@ -85,7 +85,7 @@ with col3:
     st.markdown("### 🌱 Eco-Friendly")
     st.write("Supports **sustainable gardening** and responsible water use.")
 
-# --- Section 2: Join Our Mission ---
+# mission
 st.markdown("## ☀️ Join Our Mission")
 st.write("""
 Growtopia isn’t just about technology — it’s about nurturing a movement.  
@@ -96,3 +96,4 @@ Together, we can make sustainable gardening a way of life for every household.
 st.caption("© 2025 Growtopia | Making gardening an enjoyable and sustainable activity for everyone.")
 
 st.markdown('</div>', unsafe_allow_html=True)
+
