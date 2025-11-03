@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="About | Growtopia", layout="wide")
 
-# --- Styling ---
+# style
 page_style = """
 <style>
 [data-testid="stAppViewContainer"] {
@@ -54,7 +54,7 @@ img {
 """
 st.markdown(page_style, unsafe_allow_html=True)
 
-# --- Content Wrapper ---
+# wrapper
 st.markdown('<div class="main-container">', unsafe_allow_html=True)
 
 st.title("🌱 About Growtopia")
@@ -68,7 +68,7 @@ Our goal is to make smart agriculture **accessible**, **efficient**, and **eco-f
 for every home, garden, and small farm.
 """)
 
-# --- History Section ---
+# history
 st.write("""
 I’ve always loved planting, but I often forgot to water my plants, or sometimes overwatered them, 
 especially when I was away from home or overslept.  
@@ -79,7 +79,7 @@ It started as a simple idea to help me care for my own plants, and grew into a p
 that aims to help others save water, time, and effort while promoting sustainable living.
 """)
 
-# --- Image Section ---
+# image
 st.markdown(
     """
     <div style='text-align: center;'>
@@ -95,5 +95,6 @@ st.markdown(
 
 
 st.caption("© 2025 Growtopia | Making gardening an enjoyable and sustainable activity for everyone.")
+
 
 st.markdown('</div>', unsafe_allow_html=True)
