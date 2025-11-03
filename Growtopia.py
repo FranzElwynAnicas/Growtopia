@@ -2,6 +2,21 @@ import streamlit as st
 
 st.set_page_config(page_title="Growtopia | Smart Watering System", layout="wide")
 
+# Google analytics
+st.markdown(
+    """
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCWKZ7L7B4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VCWKZ7L7B4');
+    </script>
+    """,
+    unsafe_allow_html=True
+)
+
 # style
 page_style = """
 <style>
@@ -96,4 +111,5 @@ Together, we can make sustainable gardening a way of life for every household.
 st.caption("© 2025 Growtopia | Making gardening an enjoyable and sustainable activity for everyone.")
 
 st.markdown('</div>', unsafe_allow_html=True)
+
 
